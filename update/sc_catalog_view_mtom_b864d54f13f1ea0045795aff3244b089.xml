@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sc_catalog_view_mtom">
+    <sc_catalog_view_mtom action="INSERT_OR_UPDATE">
+        <default>true</default>
+        <sc_catalog display_value="Okta">1654194f13f1ea0045795aff3244b0c8</sc_catalog>
+        <sys_class_name>sc_catalog_view_mtom</sys_class_name>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-09-15 23:31:53</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>b864d54f13f1ea0045795aff3244b089</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Okta.catalog_okta</sys_name>
+        <sys_package display_value="Okta Group Management" source="x_dmr_okta_group_m">17cfc9cb13f1ea0045795aff3244b045</sys_package>
+        <sys_policy/>
+        <sys_portal_page display_value="Okta Access Management">7464d54f13f1ea0045795aff3244b089</sys_portal_page>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Okta Group Management">17cfc9cb13f1ea0045795aff3244b045</sys_scope>
+        <sys_update_name>sc_catalog_view_mtom_b864d54f13f1ea0045795aff3244b089</sys_update_name>
+        <sys_updated_by>doug.bagley</sys_updated_by>
+        <sys_updated_on>2016-09-15 23:31:53</sys_updated_on>
+    </sc_catalog_view_mtom>
+</record_update>

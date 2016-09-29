@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition/>
+        <conditional>false</conditional>
+        <name>Okta Import Groups</name>
+        <run_as display_value="Doug Bagley">9faeb0d31319e20045795aff3244b097</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period/>
+        <run_start>2016-09-15 23:18:03</run_start>
+        <run_time>1970-01-01 08:00:00</run_time>
+        <run_type>daily</run_type>
+        <script><![CDATA[var okta_url = gs.getProperty("x_dmr_okta_group_m.OktaInstance");
+var okta_api = gs.getProperty("x_dmr_okta_group_m.OktaAPIKey");
+
+var getrestMessage = new sn_ws.RESTMessageV2();
+var url = okta_url + "/api/v1/groups";
+getrestMessage.setHttpMethod("get");
+getrestMessage.setRequestHeader("Accept","application/json");
+getrestMessage.setRequestHeader("Content-Type","application/json");
+getrestMessage.setRequestHeader("Authorization",okta_api);
+getrestMessage.setEndpoint(url);
+getrestMessage.setHttpTimeout(10000);
+var responseBody = getrestMessage.execute();
+responseBody.waitForResponse(60);
+
+
+var jsonString = responseBody.getBody();
+var obj = JSON.parse(jsonString);
+
+
+
+for (var i = 0; i < obj.length; i++) {
+	//gs.print('ID=' + obj[i].id);
+	var okta_id = obj[i].id;
+	//gs.print('Type=' + obj[i].type);
+	gs.info('Type=' + obj[i].type);
+	
+	var okta_type = obj[i].type;
+	var okta_name = obj[i].profile.name;
+	var okta_desc = obj[i].profile.description;
+	var okta_createdDate = obj[i].created;
+	
+	var parts3 = okta_createdDate.split("T");
+	var newdate2 = parts3.join(" ");
+	newdate2 = newdate2.substring(0,19);
+	var gdt= new GlideDateTime();
+	gdt.setDisplayValue(newdate2);
+	okta_createdDate = gdt.getDisplayValue();
+	
+	// 	for (l = 0; l < obj[i]._links.logo.length; l++) {
+		// 		gs.print('Logo(' + l + ')=' + obj[i]._links.logo[l].name);
+		// 	}
+		// 	gs.print('users=' + obj[i]._links.users.href);
+		
+		
+		var o_group = new GlideRecord('x_dmr_okta_group_m_okta_group_management_table');
+		o_group.addQuery('okta_id', okta_id);
+		if (o_group.query()){
+			// group already exists
+			gs.info("Group: " + groupname);
+		}
+		else{
+			// insert group
+			var oi_group = new GlideRecord('x_dmr_okta_group_m_okta_group_management_table');
+			oi_group.initialize();
+			oi_group.okta_group_name = okta_name;
+			oi_group.okta_id = okta_id;
+			oi_group.okta_group_description = okta_desc;
+			oi_group.okta_group_type = okta_type;
+			oi_group.okta_created = okta_createdDate;
+			// enable after verifying date format
+			oi_group.insert();
+		}
+	}]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-09-15 23:22:05</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>5631190f13f1ea0045795aff3244b052</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Okta Import Groups</sys_name>
+        <sys_package display_value="Okta Group Management" source="x_dmr_okta_group_m">17cfc9cb13f1ea0045795aff3244b045</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Okta Group Management">17cfc9cb13f1ea0045795aff3244b045</sys_scope>
+        <sys_update_name>sysauto_script_5631190f13f1ea0045795aff3244b052</sys_update_name>
+        <sys_updated_by>doug.bagley</sys_updated_by>
+        <sys_updated_on>2016-09-21 22:23:15</sys_updated_on>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>

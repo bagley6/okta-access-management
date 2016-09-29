@@ -1,0 +1,806 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="wf_workflow_version">
+    <wf_workflow_version action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <activity_stages>{"ends":["b118b7bc13026e00e0e253c32244b064"],"subflows":[],"stages":{"3518b7bc13026e00e0e253c32244b063":{"stageId":"3518b7bc13026e00e0e253c32244b063","order":90,"duration":"","name":"Request Approved","value":"request_approved"},"b118b7bc13026e00e0e253c32244b063":{"stageId":"b118b7bc13026e00e0e253c32244b063","order":100,"duration":"1 Day","name":"Waiting for Approval","value":"waiting_for_approval"},"3118b7bc13026e00e0e253c32244b063":{"stageId":"3118b7bc13026e00e0e253c32244b063","order":1100,"duration":"","name":"Completed","value":"complete"}},"activities":{"7518b7bc13026e00e0e253c32244b064":"3518b7bc13026e00e0e253c32244b063","d718b7bc13026e00e0e253c32244b089":"b118b7bc13026e00e0e253c32244b063","b118b7bc13026e00e0e253c32244b064":"3118b7bc13026e00e0e253c32244b063"}}</activity_stages>
+        <after_business_rules>false</after_business_rules>
+        <checked_out/>
+        <checked_out_by/>
+        <column_renderer display_value="Workflow-driven">a56213111b030100adca1e094f0713ac</column_renderer>
+        <condition/>
+        <condition_type/>
+        <description/>
+        <expected_sequences>7d18b7bc13026e00e0e253c32244b063,d718b7bc13026e00e0e253c32244b089,7518b7bc13026e00e0e253c32244b064,b118b7bc13026e00e0e253c32244b064</expected_sequences>
+        <expected_time>1970-01-01 14:00:00</expected_time>
+        <expected_time_type/>
+        <full_sequences>7d18b7bc13026e00e0e253c32244b063,d718b7bc13026e00e0e253c32244b089,7518b7bc13026e00e0e253c32244b064,b118b7bc13026e00e0e253c32244b064|7d18b7bc13026e00e0e253c32244b063,d718b7bc13026e00e0e253c32244b089,b118b7bc13026e00e0e253c32244b064</full_sequences>
+        <journal/>
+        <max_activity_count>100</max_activity_count>
+        <name>Okta Add User to Privileged Group</name>
+        <not_cacheable>false</not_cacheable>
+        <on_cancel><![CDATA[// This script executes if the workflow is cancelled.// The global variable context_sys_id contains the sys_id of the cancelled workflow context.]]></on_cancel>
+        <order>100</order>
+        <pin_type>set_by_activity</pin_type>
+        <published>true</published>
+        <relative_duration/>
+        <requires_ert>true</requires_ert>
+        <run_multiple>false</run_multiple>
+        <schedule/>
+        <stage_field>stage</stage_field>
+        <stage_order>computed</stage_order>
+        <start display_value="Begin">7d18b7bc13026e00e0e253c32244b063</start>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-09-21 21:56:29</sys_created_on>
+        <sys_id>3918b7bc13026e00e0e253c32244b062</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_updated_by>azander@ss34demo.com</sys_updated_by>
+        <sys_updated_on>2016-09-21 22:20:17</sys_updated_on>
+        <table>sc_req_item</table>
+        <timezone/>
+        <validated>true</validated>
+        <workflow display_value="Okta Add User to Privileged Group">d8eaa6f013466e0045795aff3244b0ab</workflow>
+    </wf_workflow_version>
+    <wf_workflow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <description/>
+        <name>Okta Add User to Privileged Group</name>
+        <preview/>
+        <sys_class_name>wf_workflow</sys_class_name>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-09-21 16:19:08</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d8eaa6f013466e0045795aff3244b0ab</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Okta Add User to Privileged Group</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Okta Group Management" source="x_dmr_okta_group_m">17cfc9cb13f1ea0045795aff3244b045</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Okta Group Management">17cfc9cb13f1ea0045795aff3244b045</sys_scope>
+        <sys_update_name>wf_workflow_d8eaa6f013466e0045795aff3244b0ab</sys_update_name>
+        <sys_updated_by>doug.bagley</sys_updated_by>
+        <sys_updated_on>2016-09-21 16:22:21</sys_updated_on>
+        <table>sc_req_item</table>
+        <template>false</template>
+        <vars/>
+    </wf_workflow>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Completed</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>1100</order>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-09-21 21:56:29</sys_created_on>
+        <sys_id>3118b7bc13026e00e0e253c32244b063</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>doug.bagley</sys_updated_by>
+        <sys_updated_on>2016-09-21 21:56:29</sys_updated_on>
+        <value>complete</value>
+        <workflow_version display_value="Okta Add User to Privileged Group">3918b7bc13026e00e0e253c32244b062</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Delivery</name>
+        <ola>1970-01-03 00:00:00</ola>
+        <order>140</order>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-09-21 21:56:29</sys_created_on>
+        <sys_id>b518b7bc13026e00e0e253c32244b063</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>doug.bagley</sys_updated_by>
+        <sys_updated_on>2016-09-21 21:56:29</sys_updated_on>
+        <value>delivery</value>
+        <workflow_version display_value="Okta Add User to Privileged Group">3918b7bc13026e00e0e253c32244b062</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Fulfillment</name>
+        <ola>1970-01-02 00:00:00</ola>
+        <order>120</order>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-09-21 21:56:29</sys_created_on>
+        <sys_id>b918b7bc13026e00e0e253c32244b063</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>doug.bagley</sys_updated_by>
+        <sys_updated_on>2016-09-21 21:56:29</sys_updated_on>
+        <value>fulfillment</value>
+        <workflow_version display_value="Okta Add User to Privileged Group">3918b7bc13026e00e0e253c32244b062</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Request Cancelled</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>1000</order>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-09-21 21:56:29</sys_created_on>
+        <sys_id>3918b7bc13026e00e0e253c32244b063</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>doug.bagley</sys_updated_by>
+        <sys_updated_on>2016-09-21 21:56:29</sys_updated_on>
+        <value>Request Cancelled</value>
+        <workflow_version display_value="Okta Add User to Privileged Group">3918b7bc13026e00e0e253c32244b062</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Request Approved</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>90</order>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-09-21 21:56:29</sys_created_on>
+        <sys_id>3518b7bc13026e00e0e253c32244b063</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>doug.bagley</sys_updated_by>
+        <sys_updated_on>2016-09-21 21:56:29</sys_updated_on>
+        <value>request_approved</value>
+        <workflow_version display_value="Okta Add User to Privileged Group">3918b7bc13026e00e0e253c32244b062</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Waiting for Approval</name>
+        <ola>1970-01-02 00:00:00</ola>
+        <order>100</order>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-09-21 21:56:29</sys_created_on>
+        <sys_id>b118b7bc13026e00e0e253c32244b063</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>doug.bagley</sys_updated_by>
+        <sys_updated_on>2016-09-21 21:56:29</sys_updated_on>
+        <value>waiting_for_approval</value>
+        <workflow_version display_value="Okta Add User to Privileged Group">3918b7bc13026e00e0e253c32244b062</workflow_version>
+    </wf_stage>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>3</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Add user to okta group via API and update group membership for IGA</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage display_value="Request Approved">3518b7bc13026e00e0e253c32244b063</stage>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-09-21 21:56:29</sys_created_on>
+        <sys_id>7518b7bc13026e00e0e253c32244b064</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>doug.bagley</sys_updated_by>
+        <sys_updated_on>2016-09-21 21:57:43</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Okta Add User to Privileged Group">3918b7bc13026e00e0e253c32244b062</workflow_version>
+        <x>280</x>
+        <y>327</y>
+    </wf_activity>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>7518b7bc13026e00e0e253c32244b064</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-09-21 21:56:29</sys_created_on>
+        <sys_id>f518b7bc13026e00e0e253c32244b064</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>doug.bagley</sys_updated_by>
+        <sys_updated_on>2016-09-21 21:56:29</sys_updated_on>
+        <value>var okta_url = gs.getProperty("x_dmr_okta_group_m.OktaInstance");&#13;
+var okta_api = gs.getProperty("x_dmr_okta_group_m.OktaAPIKey");&#13;
+var groupid = gs.getProperty("x_dmr_okta_group_m.PrivelegedAccessGroupID");&#13;
+&#13;
+var oktaUser = current.request.requested_for.x_dmr_okta_group_m_okta_user_id;&#13;
+&#13;
+// var groupname = current.variables.okta_group.okta_group_name;&#13;
+&#13;
+gs.info("User equals: "+ oktaUser);&#13;
+gs.info("Group is: "+ groupid);&#13;
+// gs.info("Group is: "+ groupname);&#13;
+&#13;
+&#13;
+gs.info("url is: "+ okta_url);&#13;
+gs.info("api key is: "+ okta_api);&#13;
+&#13;
+&#13;
+var getrestMessage = new sn_ws.RESTMessageV2();&#13;
+var url = okta_url + "/api/v1/groups/"+groupid+"/users/"+oktaUser ;&#13;
+gs.info("url call is: "+ url);&#13;
+getrestMessage.setHttpMethod("put");&#13;
+getrestMessage.setRequestHeader("Accept","application/json");&#13;
+getrestMessage.setRequestHeader("Content-Type","application/json");&#13;
+getrestMessage.setRequestHeader("Authorization",okta_api);&#13;
+getrestMessage.setEndpoint(url);&#13;
+//getrestMessage.setHttpTimeout(10000);&#13;
+var responseBody = getrestMessage.execute();&#13;
+responseBody.waitForResponse(60);&#13;
+//gs.info(responseBody);&#13;
+&#13;
+// add user to group membership&#13;
+var rec = new GlideRecord('sys_user');&#13;
+rec.addQuery('x_dmr_okta_group_m_okta_user_id', oktaUser);&#13;
+rec.query();&#13;
+while(rec.next()){&#13;
+	var o_user = rec.sys_id;&#13;
+	gs.info("user is: " + o_user);&#13;
+}&#13;
+var rec2 = new GlideRecord('x_dmr_okta_group_m_okta_group_management_table');&#13;
+rec2.addQuery('okta_id', groupid);&#13;
+rec2.query();&#13;
+while(rec2.next()){&#13;
+	var group_sysid = rec2.sys_id;&#13;
+	gs.info("Sys ID is: " + group_sysid);&#13;
+}&#13;
+&#13;
+var gr = new GlideRecord('x_dmr_okta_group_m_okta_user_group_members');&#13;
+gr.initialize();&#13;
+gr.okta_group = group_sysid;&#13;
+gr.user = o_user;&#13;
+gr.insert();&#13;
+&#13;
+</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Add user to okta group via API and update group membership for IGA">7518b7bc13026e00e0e253c32244b064</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-09-21 21:56:29</sys_created_on>
+        <sys_id>b918b7bc13026e00e0e253c32244b064</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>doug.bagley</sys_updated_by>
+        <sys_updated_on>2016-09-21 21:56:29</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Approval - User">35433da80a0a029a0028c639a1e51eb4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>4</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Approval for Privileged Access</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage display_value="Waiting for Approval">b118b7bc13026e00e0e253c32244b063</stage>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-09-21 21:57:11</sys_created_on>
+        <sys_id>d718b7bc13026e00e0e253c32244b089</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>doug.bagley</sys_updated_by>
+        <sys_updated_on>2016-09-21 21:57:12</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Okta Add User to Privileged Group">3918b7bc13026e00e0e253c32244b062</workflow_version>
+        <x>468</x>
+        <y>133</y>
+    </wf_activity>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d718b7bc13026e00e0e253c32244b089</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-09-21 21:57:11</sys_created_on>
+        <sys_id>0848f7bc13026e00e0e253c32244b001</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>doug.bagley</sys_updated_by>
+        <sys_updated_on>2016-09-21 21:57:11</sys_updated_on>
+        <value/>
+        <variable display_value="">4485eef70a6a803f6bc4bafa9e999640</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d718b7bc13026e00e0e253c32244b089</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-09-21 21:57:11</sys_created_on>
+        <sys_id>c448f7bc13026e00e0e253c32244b002</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>doug.bagley</sys_updated_by>
+        <sys_updated_on>2016-09-21 21:57:11</sys_updated_on>
+        <value>any</value>
+        <variable display_value="">c35e5bdd0a0a0ba96248a709f495c9ae</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d718b7bc13026e00e0e253c32244b089</document_key>
+        <order>101</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-09-21 21:57:11</sys_created_on>
+        <sys_id>0048f7bc13026e00e0e253c32244b000</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>doug.bagley</sys_updated_by>
+        <sys_updated_on>2016-09-21 21:57:11</sys_updated_on>
+        <value>approval</value>
+        <variable display_value="">e846198f0a0004f91fba434a514ba8b8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d718b7bc13026e00e0e253c32244b089</document_key>
+        <order>103</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-09-21 21:57:11</sys_created_on>
+        <sys_id>c048f7bc13026e00e0e253c32244b000</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>doug.bagley</sys_updated_by>
+        <sys_updated_on>2016-09-21 21:57:11</sys_updated_on>
+        <value/>
+        <variable display_value="">e37b77ac0a0004f973283ad13b341c5b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d718b7bc13026e00e0e253c32244b089</document_key>
+        <order>104</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-09-21 21:57:11</sys_created_on>
+        <sys_id>0448f7bc13026e00e0e253c32244b002</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>doug.bagley</sys_updated_by>
+        <sys_updated_on>2016-09-21 21:57:11</sys_updated_on>
+        <value/>
+        <variable display_value="">e37a96e80a0004f978b47d2d6c5e0b22</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d718b7bc13026e00e0e253c32244b089</document_key>
+        <order>110</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-09-21 21:57:11</sys_created_on>
+        <sys_id>4048b7bc13026e00e0e253c32244b0ff</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>doug.bagley</sys_updated_by>
+        <sys_updated_on>2016-09-21 21:57:11</sys_updated_on>
+        <value/>
+        <variable display_value="">a77191a4c0a800662b403f7dff5f1bbd</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d718b7bc13026e00e0e253c32244b089</document_key>
+        <order>115</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-09-21 21:57:11</sys_created_on>
+        <sys_id>0048f7bc13026e00e0e253c32244b003</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>doug.bagley</sys_updated_by>
+        <sys_updated_on>2016-09-21 21:57:11</sys_updated_on>
+        <value/>
+        <variable display_value="">a76680b9c0a8006661b107d0f21fae67</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d718b7bc13026e00e0e253c32244b089</document_key>
+        <order>120</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-09-21 21:57:11</sys_created_on>
+        <sys_id>8448f7bc13026e00e0e253c32244b000</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>doug.bagley</sys_updated_by>
+        <sys_updated_on>2016-09-21 21:57:11</sys_updated_on>
+        <value/>
+        <variable display_value="">a77903a7c0a8006641af7c9b1d34444e</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d718b7bc13026e00e0e253c32244b089</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-09-21 21:57:11</sys_created_on>
+        <sys_id>0c48f7bc13026e00e0e253c32244b000</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>doug.bagley</sys_updated_by>
+        <sys_updated_on>2016-09-21 21:57:11</sys_updated_on>
+        <value>fb01c5e21329a60045795aff3244b056</value>
+        <variable display_value="">c35e4cc40a0a0ba96248a7098ec9cb06</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d718b7bc13026e00e0e253c32244b089</document_key>
+        <order>310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-09-21 21:57:11</sys_created_on>
+        <sys_id>8048f7bc13026e00e0e253c32244b001</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>doug.bagley</sys_updated_by>
+        <sys_updated_on>2016-09-21 21:57:11</sys_updated_on>
+        <value>reject</value>
+        <variable display_value="">502163410a6a803f0356332b24dc7945</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d718b7bc13026e00e0e253c32244b089</document_key>
+        <order>330</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-09-21 21:57:11</sys_created_on>
+        <sys_id>cc48f7bc13026e00e0e253c32244b000</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>doug.bagley</sys_updated_by>
+        <sys_updated_on>2016-09-21 21:57:11</sys_updated_on>
+        <value>approval_history</value>
+        <variable display_value="">e863e3b80a0004f911d67787e77e0f16</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d718b7bc13026e00e0e253c32244b089</document_key>
+        <order>900</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-09-21 21:57:11</sys_created_on>
+        <sys_id>4048f7bc13026e00e0e253c32244b002</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>doug.bagley</sys_updated_by>
+        <sys_updated_on>2016-09-21 21:57:11</sys_updated_on>
+        <value>08fcd0830a0a0b2600079f56b1adb9ae</value>
+        <variable display_value="">a7754e91c0a800664938d0ef6d2664d7</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d718b7bc13026e00e0e253c32244b089</document_key>
+        <order>900</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-09-21 21:57:11</sys_created_on>
+        <sys_id>8848f7bc13026e00e0e253c32244b002</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>doug.bagley</sys_updated_by>
+        <sys_updated_on>2016-09-21 21:57:11</sys_updated_on>
+        <value/>
+        <variable display_value="">a774138dc0a80066000be7af20961c7d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d718b7bc13026e00e0e253c32244b089</document_key>
+        <order>1110</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-09-21 21:57:11</sys_created_on>
+        <sys_id>4448f7bc13026e00e0e253c32244b001</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>doug.bagley</sys_updated_by>
+        <sys_updated_on>2016-09-21 21:57:11</sys_updated_on>
+        <value/>
+        <variable display_value="">a769a182c0a8006629db7fa3fc2a863d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d718b7bc13026e00e0e253c32244b089</document_key>
+        <order>1120</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-09-21 21:57:11</sys_created_on>
+        <sys_id>c848f7bc13026e00e0e253c32244b001</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>doug.bagley</sys_updated_by>
+        <sys_updated_on>2016-09-21 21:57:11</sys_updated_on>
+        <value>3bf802c20a0a0b52008e2859cd8abcf2</value>
+        <variable display_value="">a76c6257c0a8006645cff43883470e64</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d718b7bc13026e00e0e253c32244b089</document_key>
+        <order>1150</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-09-21 21:57:11</sys_created_on>
+        <sys_id>8c48f7bc13026e00e0e253c32244b001</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>doug.bagley</sys_updated_by>
+        <sys_updated_on>2016-09-21 21:57:11</sys_updated_on>
+        <value/>
+        <variable display_value="">a76b8c6ec0a800664bb14d5d8b9cd7c4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d718b7bc13026e00e0e253c32244b089</document_key>
+        <order>1200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-09-21 21:57:11</sys_created_on>
+        <sys_id>8848b7bc13026e00e0e253c32244b0ff</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>doug.bagley</sys_updated_by>
+        <sys_updated_on>2016-09-21 21:57:11</sys_updated_on>
+        <value/>
+        <variable display_value="">a775f59ac0a8006665d72362ae687035</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d718b7bc13026e00e0e253c32244b089</document_key>
+        <order>1200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-09-21 21:57:11</sys_created_on>
+        <sys_id>c048f7bc13026e00e0e253c32244b003</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>doug.bagley</sys_updated_by>
+        <sys_updated_on>2016-09-21 21:57:11</sys_updated_on>
+        <value/>
+        <variable display_value="">a7781cb6c0a80066147dc7a5244d5d16</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d718b7bc13026e00e0e253c32244b089</document_key>
+        <order>1330</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-09-21 21:57:11</sys_created_on>
+        <sys_id>4c48b7bc13026e00e0e253c32244b0ff</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>doug.bagley</sys_updated_by>
+        <sys_updated_on>2016-09-21 21:57:11</sys_updated_on>
+        <value/>
+        <variable display_value="">02c618170a0a0b26436f5c2c9f7a3901</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d718b7bc13026e00e0e253c32244b089</document_key>
+        <order>1360</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-09-21 21:57:11</sys_created_on>
+        <sys_id>4848f7bc13026e00e0e253c32244b000</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>doug.bagley</sys_updated_by>
+        <sys_updated_on>2016-09-21 21:57:11</sys_updated_on>
+        <value>// Set 'answer' to the number of seconds this timer should wait&#13;
+answer = 0;</value>
+        <variable display_value="">a782cde9c0a8006608f39abdd85c8395</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d718b7bc13026e00e0e253c32244b089</document_key>
+        <order>1370</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-09-21 21:57:11</sys_created_on>
+        <sys_id>c448b7bc13026e00e0e253c32244b0ff</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>doug.bagley</sys_updated_by>
+        <sys_updated_on>2016-09-21 21:57:11</sys_updated_on>
+        <value>// Set the variable 'answer' to '', 'approved' or 'rejected' to indicate the approval status for this approval.  When called, the following information is available:&#13;
+//&#13;
+//    counts.total = total number of users that are part of this approval&#13;
+//    counts.approved = # of users that approved so far&#13;
+//    counts.rejected = # of users that rejected so far&#13;
+//    counts.requested = # of users that are pending approval&#13;
+//    counts.not_requested = # of users that are not pending approval&#13;
+//    counts.not_required = # of users that approval is not required&#13;
+//&#13;
+</value>
+        <variable display_value="">02c86d780a0a0b261e6a356bc893d348</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d718b7bc13026e00e0e253c32244b089</document_key>
+        <order>2000</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-09-21 21:57:11</sys_created_on>
+        <sys_id>0448b7bc13026e00e0e253c32244b0ff</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>doug.bagley</sys_updated_by>
+        <sys_updated_on>2016-09-21 21:57:11</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">02ca01820a0a0b261cf923fb95f5e1d0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d718b7bc13026e00e0e253c32244b089</document_key>
+        <order>2050</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-09-21 21:57:11</sys_created_on>
+        <sys_id>4c48f7bc13026e00e0e253c32244b002</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>doug.bagley</sys_updated_by>
+        <sys_updated_on>2016-09-21 21:57:11</sys_updated_on>
+        <value>// Set the variable 'answer' to a comma-separated list of user ids and/or group ids or an array of user/group ids to add as approvers.&#13;
+//&#13;
+// For example:&#13;
+//       answer = [];&#13;
+//       answer.push('id1');&#13;
+//       answer.push('id2');&#13;
+</value>
+        <variable display_value="">c35e582f0a0a0ba96248a70985207e63</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Approval for Privileged Access">d718b7bc13026e00e0e253c32244b089</activity>
+        <condition>activity.result == 'approved' || activity.result == 'skipped'</condition>
+        <condition_default display_value="Approved">586e1fa60a0a0b5c008121ab894f2b06</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Approved</name>
+        <order>1</order>
+        <short_description>Approval request was approved</short_description>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-09-21 21:57:11</sys_created_on>
+        <sys_id>8448f7bc13026e00e0e253c32244b003</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>doug.bagley</sys_updated_by>
+        <sys_updated_on>2016-09-21 21:57:11</sys_updated_on>
+    </wf_condition>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Approval for Privileged Access">d718b7bc13026e00e0e253c32244b089</activity>
+        <condition>activity.result == 'rejected'</condition>
+        <condition_default display_value="Rejected">586e4ef60a0a0b5c00440b56c014c8a5</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Rejected</name>
+        <order>2</order>
+        <short_description>Approval request was rejected</short_description>
+        <skip_during_generate>true</skip_during_generate>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-09-21 21:57:11</sys_created_on>
+        <sys_id>0848f7bc13026e00e0e253c32244b003</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>doug.bagley</sys_updated_by>
+        <sys_updated_on>2016-09-21 21:57:11</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Begin">c7a5e32c0a0a0b3a002377c24ed8ea76</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>1</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>Begin</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-09-21 21:56:29</sys_created_on>
+        <sys_id>7d18b7bc13026e00e0e253c32244b063</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>doug.bagley</sys_updated_by>
+        <sys_updated_on>2016-09-21 21:56:29</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="Okta Add User to Privileged Group">3918b7bc13026e00e0e253c32244b062</workflow_version>
+        <x>20</x>
+        <y>20</y>
+    </wf_activity>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Begin">7d18b7bc13026e00e0e253c32244b063</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-09-21 21:56:29</sys_created_on>
+        <sys_id>fd18b7bc13026e00e0e253c32244b063</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>doug.bagley</sys_updated_by>
+        <sys_updated_on>2016-09-21 21:56:29</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="End">c7a66f7d0a0a0b3a004544a6d2f14076</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>2</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>End</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage display_value="Completed">3118b7bc13026e00e0e253c32244b063</stage>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-09-21 21:56:29</sys_created_on>
+        <sys_id>b118b7bc13026e00e0e253c32244b064</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>doug.bagley</sys_updated_by>
+        <sys_updated_on>2016-09-21 21:57:53</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="Okta Add User to Privileged Group">3918b7bc13026e00e0e253c32244b062</workflow_version>
+        <x>359</x>
+        <y>660</y>
+    </wf_activity>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">fd18b7bc13026e00e0e253c32244b063</condition>
+        <from display_value="Begin">7d18b7bc13026e00e0e253c32244b063</from>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-09-21 21:57:27</sys_created_on>
+        <sys_id>085877bc13026e00e0e253c32244b07b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>doug.bagley</sys_updated_by>
+        <sys_updated_on>2016-09-21 21:57:27</sys_updated_on>
+        <to display_value="Approval for Privileged Access">d718b7bc13026e00e0e253c32244b089</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Approved">8448f7bc13026e00e0e253c32244b003</condition>
+        <from display_value="Approval for Privileged Access">d718b7bc13026e00e0e253c32244b089</from>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-09-21 21:57:29</sys_created_on>
+        <sys_id>d858f7bc13026e00e0e253c32244b05c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>doug.bagley</sys_updated_by>
+        <sys_updated_on>2016-09-21 21:57:29</sys_updated_on>
+        <to display_value="Add user to okta group via API and update group membership for IGA">7518b7bc13026e00e0e253c32244b064</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">b918b7bc13026e00e0e253c32244b064</condition>
+        <from display_value="Add user to okta group via API and update group membership for IGA">7518b7bc13026e00e0e253c32244b064</from>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-09-21 21:56:29</sys_created_on>
+        <sys_id>f118b7bc13026e00e0e253c32244b065</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>doug.bagley</sys_updated_by>
+        <sys_updated_on>2016-09-21 21:56:29</sys_updated_on>
+        <to display_value="End">b118b7bc13026e00e0e253c32244b064</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Rejected">0848f7bc13026e00e0e253c32244b003</condition>
+        <from display_value="Approval for Privileged Access">d718b7bc13026e00e0e253c32244b089</from>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-09-21 21:57:31</sys_created_on>
+        <sys_id>fc5877bc13026e00e0e253c32244b07b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>doug.bagley</sys_updated_by>
+        <sys_updated_on>2016-09-21 21:57:31</sys_updated_on>
+        <to display_value="End">b118b7bc13026e00e0e253c32244b064</to>
+    </wf_transition>
+    <wf_estimated_runtime_config action="INSERT_OR_UPDATE">
+        <estimated_run_time/>
+        <no_of_data_points>1</no_of_data_points>
+        <percentage_threshold_ert>20</percentage_threshold_ert>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-09-21 21:56:29</sys_created_on>
+        <sys_id>7918b7bc13026e00e0e253c32244b062</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>doug.bagley</sys_updated_by>
+        <sys_updated_on>2016-09-21 21:56:29</sys_updated_on>
+        <workflow_version display_value="Okta Add User to Privileged Group">3918b7bc13026e00e0e253c32244b062</workflow_version>
+    </wf_estimated_runtime_config>
+    <wf_workflow_version action="update_multiple" query="workflow=d8eaa6f013466e0045795aff3244b0ab^sys_id!=3918b7bc13026e00e0e253c32244b062">
+        <published>false</published>
+    </wf_workflow_version>
+</record_update>

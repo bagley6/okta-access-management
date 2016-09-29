@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sc_cat_item_catalog">
+    <sc_cat_item_catalog action="INSERT_OR_UPDATE">
+        <sc_cat_item display_value="Add User to Okta Group">dd94994f13f1ea0045795aff3244b0eb</sc_cat_item>
+        <sc_catalog display_value="Service Catalog">e0d08b13c3330100c8b837659bba8fb4</sc_catalog>
+        <sys_class_name>sc_cat_item_catalog</sys_class_name>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-09-16 14:50:28</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>20a6609713f5ea0045795aff3244b0aa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Service Catalog.Add User to Okta Group</sys_name>
+        <sys_package display_value="Okta Group Management" source="x_dmr_okta_group_m">17cfc9cb13f1ea0045795aff3244b045</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Okta Group Management">17cfc9cb13f1ea0045795aff3244b045</sys_scope>
+        <sys_update_name>sc_cat_item_catalog_20a6609713f5ea0045795aff3244b0aa</sys_update_name>
+        <sys_updated_by>doug.bagley</sys_updated_by>
+        <sys_updated_on>2016-09-16 14:50:28</sys_updated_on>
+    </sc_cat_item_catalog>
+</record_update>

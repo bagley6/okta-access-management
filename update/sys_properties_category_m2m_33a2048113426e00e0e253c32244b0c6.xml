@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_properties_category_m2m">
+    <sys_properties_category_m2m action="INSERT_OR_UPDATE">
+        <category display_value="Okta REST API Settings">6c86f4db13f5ea0045795aff3244b07a</category>
+        <order>400</order>
+        <property display_value="x_dmr_okta_group_m.AuditorGroup" name="x_dmr_okta_group_m.AuditorGroup">9e72c08113426e00e0e253c32244b057</property>
+        <sys_class_name>sys_properties_category_m2m</sys_class_name>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-09-21 22:42:46</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>33a2048113426e00e0e253c32244b0c6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_dmr_okta_group_m.AuditorGroup.Okta REST API Settings</sys_name>
+        <sys_package display_value="Okta Group Management" source="x_dmr_okta_group_m">17cfc9cb13f1ea0045795aff3244b045</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Okta Group Management">17cfc9cb13f1ea0045795aff3244b045</sys_scope>
+        <sys_update_name>sys_properties_category_m2m_33a2048113426e00e0e253c32244b0c6</sys_update_name>
+        <sys_updated_by>doug.bagley</sys_updated_by>
+        <sys_updated_on>2016-09-21 22:42:46</sys_updated_on>
+    </sys_properties_category_m2m>
+</record_update>

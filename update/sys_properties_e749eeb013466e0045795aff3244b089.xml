@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>Enter the Priveleged Group ID for the Priveleged use case demo.</description>
+        <ignore_cache>false</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_dmr_okta_group_m.PrivelegedAccessGroupID</name>
+        <read_roles/>
+        <suffix>PrivelegedAccessGroupID</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-09-21 16:13:19</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>e749eeb013466e0045795aff3244b089</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>x_dmr_okta_group_m.PrivelegedAccessGroupID</sys_name>
+        <sys_package display_value="Okta Group Management" source="x_dmr_okta_group_m">17cfc9cb13f1ea0045795aff3244b045</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Okta Group Management">17cfc9cb13f1ea0045795aff3244b045</sys_scope>
+        <sys_update_name>sys_properties_e749eeb013466e0045795aff3244b089</sys_update_name>
+        <sys_updated_by>doug.bagley</sys_updated_by>
+        <sys_updated_on>2016-09-21 16:25:54</sys_updated_on>
+        <type>string</type>
+        <value>00gn12zjqnxhB5wbb1t6</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=e749eeb013466e0045795aff3244b089"/>
+</record_update>

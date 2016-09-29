@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="INSERT_OR_UPDATE">
+        <sc_cat_item display_value="Remove User From Okta Group">b3970158134a2e0045795aff3244b01b</sc_cat_item>
+        <sc_category display_value="Okta Access Management">32b7a66013026e0045795aff3244b042</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-09-20 21:30:26</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>66882a6013026e0045795aff3244b05f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Okta Access Management.Remove Okta User From Group</sys_name>
+        <sys_package display_value="Okta Group Management" source="x_dmr_okta_group_m">17cfc9cb13f1ea0045795aff3244b045</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Okta Group Management">17cfc9cb13f1ea0045795aff3244b045</sys_scope>
+        <sys_update_name>sc_cat_item_category_66882a6013026e0045795aff3244b05f</sys_update_name>
+        <sys_updated_by>doug.bagley</sys_updated_by>
+        <sys_updated_on>2016-09-20 21:30:26</sys_updated_on>
+    </sc_cat_item_category>
+</record_update>

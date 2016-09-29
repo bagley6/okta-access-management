@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="wf_workflow_version">
+    <wf_workflow_version action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <activity_stages>{"ends":["e2883bbc13026e00e0e253c32244b095"],"subflows":[],"stages":{"e6c87bbc13026e00e0e253c32244b015":{"stageId":"e6c87bbc13026e00e0e253c32244b015","order":1100,"duration":"","name":"Complete","value":"complete"},"7dd8bbbc13026e00e0e253c32244b0f7":{"stageId":"7dd8bbbc13026e00e0e253c32244b0f7","order":100,"duration":"","name":"In Progress","value":"in progress"}},"activities":{"a6883bbc13026e00e0e253c32244b095":"7dd8bbbc13026e00e0e253c32244b0f7","e2883bbc13026e00e0e253c32244b095":"e6c87bbc13026e00e0e253c32244b015"}}</activity_stages>
+        <after_business_rules>false</after_business_rules>
+        <checked_out/>
+        <checked_out_by/>
+        <column_renderer display_value="Workflow-driven">a56213111b030100adca1e094f0713ac</column_renderer>
+        <condition/>
+        <condition_type>run_match</condition_type>
+        <description/>
+        <expected_sequences>ae883bbc13026e00e0e253c32244b095,a6883bbc13026e00e0e253c32244b095,e2883bbc13026e00e0e253c32244b095</expected_sequences>
+        <expected_time>1970-01-01 14:00:00</expected_time>
+        <expected_time_type/>
+        <full_sequences>ae883bbc13026e00e0e253c32244b095,a6883bbc13026e00e0e253c32244b095,e2883bbc13026e00e0e253c32244b095</full_sequences>
+        <journal/>
+        <max_activity_count>100</max_activity_count>
+        <name>Okta remove user from group</name>
+        <not_cacheable>false</not_cacheable>
+        <on_cancel><![CDATA[// This script executes if the workflow is cancelled.// The global variable context_sys_id contains the sys_id of the cancelled workflow context.]]></on_cancel>
+        <order>100</order>
+        <pin_type>set_by_activity</pin_type>
+        <published>true</published>
+        <relative_duration/>
+        <requires_ert>true</requires_ert>
+        <run_multiple>false</run_multiple>
+        <schedule/>
+        <stage_field/>
+        <stage_order>computed</stage_order>
+        <start display_value="Begin">ae883bbc13026e00e0e253c32244b095</start>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-09-21 21:58:27</sys_created_on>
+        <sys_id>aa883bbc13026e00e0e253c32244b094</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_updated_by>doug.bagley</sys_updated_by>
+        <sys_updated_on>2016-09-21 22:20:09</sys_updated_on>
+        <table>x_dmr_okta_group_m_okta_group_management_table</table>
+        <timezone/>
+        <validated>true</validated>
+        <workflow display_value="Okta remove user from group">c1588158134a2e0045795aff3244b0bb</workflow>
+    </wf_workflow_version>
+    <wf_workflow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <description/>
+        <name>Okta remove user from group</name>
+        <preview/>
+        <sys_class_name>wf_workflow</sys_class_name>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-09-19 19:51:36</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c1588158134a2e0045795aff3244b0bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Okta remove user from group</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Okta Group Management" source="x_dmr_okta_group_m">17cfc9cb13f1ea0045795aff3244b045</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Okta Group Management">17cfc9cb13f1ea0045795aff3244b045</sys_scope>
+        <sys_update_name>wf_workflow_c1588158134a2e0045795aff3244b0bb</sys_update_name>
+        <sys_updated_by>doug.bagley</sys_updated_by>
+        <sys_updated_on>2016-09-19 19:51:36</sys_updated_on>
+        <table/>
+        <template>false</template>
+        <vars/>
+    </wf_workflow>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Closed Incomplete</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>1050</order>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-09-21 21:59:32</sys_created_on>
+        <sys_id>66c87bbc13026e00e0e253c32244b015</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>doug.bagley</sys_updated_by>
+        <sys_updated_on>2016-09-21 21:59:32</sys_updated_on>
+        <value>closed_incomplete</value>
+        <workflow_version display_value="Okta remove user from group">aa883bbc13026e00e0e253c32244b094</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Complete</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>1100</order>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-09-21 21:59:32</sys_created_on>
+        <sys_id>e6c87bbc13026e00e0e253c32244b015</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>doug.bagley</sys_updated_by>
+        <sys_updated_on>2016-09-21 21:59:32</sys_updated_on>
+        <value>complete</value>
+        <workflow_version display_value="Okta remove user from group">aa883bbc13026e00e0e253c32244b094</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>In Progress</name>
+        <ola/>
+        <order>100</order>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-09-21 21:59:56</sys_created_on>
+        <sys_id>7dd8bbbc13026e00e0e253c32244b0f7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>doug.bagley</sys_updated_by>
+        <sys_updated_on>2016-09-21 22:00:10</sys_updated_on>
+        <value>in progress</value>
+        <workflow_version display_value="Okta remove user from group">aa883bbc13026e00e0e253c32244b094</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Request Cancelled</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>1000</order>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-09-21 21:59:32</sys_created_on>
+        <sys_id>e2c87bbc13026e00e0e253c32244b015</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>doug.bagley</sys_updated_by>
+        <sys_updated_on>2016-09-21 21:59:32</sys_updated_on>
+        <value>Request Cancelled</value>
+        <workflow_version display_value="Okta remove user from group">aa883bbc13026e00e0e253c32244b094</workflow_version>
+    </wf_stage>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Begin">c7a5e32c0a0a0b3a002377c24ed8ea76</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>1</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>Begin</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-09-21 21:58:27</sys_created_on>
+        <sys_id>ae883bbc13026e00e0e253c32244b095</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>doug.bagley</sys_updated_by>
+        <sys_updated_on>2016-09-21 21:58:27</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="Okta remove user from group">aa883bbc13026e00e0e253c32244b094</workflow_version>
+        <x>20</x>
+        <y>20</y>
+    </wf_activity>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Begin">ae883bbc13026e00e0e253c32244b095</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-09-21 21:58:27</sys_created_on>
+        <sys_id>22883bbc13026e00e0e253c32244b096</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>doug.bagley</sys_updated_by>
+        <sys_updated_on>2016-09-21 21:58:27</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="End">c7a66f7d0a0a0b3a004544a6d2f14076</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>2</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>End</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage display_value="Complete">e6c87bbc13026e00e0e253c32244b015</stage>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-09-21 21:58:27</sys_created_on>
+        <sys_id>e2883bbc13026e00e0e253c32244b095</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>doug.bagley</sys_updated_by>
+        <sys_updated_on>2016-09-21 22:00:32</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="Okta remove user from group">aa883bbc13026e00e0e253c32244b094</workflow_version>
+        <x>400</x>
+        <y>150</y>
+    </wf_activity>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>3</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Rest call to remove user</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage display_value="In Progress">7dd8bbbc13026e00e0e253c32244b0f7</stage>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-09-21 21:58:27</sys_created_on>
+        <sys_id>a6883bbc13026e00e0e253c32244b095</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>doug.bagley</sys_updated_by>
+        <sys_updated_on>2016-09-21 22:00:22</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Okta remove user from group">aa883bbc13026e00e0e253c32244b094</workflow_version>
+        <x>186</x>
+        <y>71</y>
+    </wf_activity>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a6883bbc13026e00e0e253c32244b095</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-09-21 21:58:27</sys_created_on>
+        <sys_id>2a883bbc13026e00e0e253c32244b095</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>doug.bagley</sys_updated_by>
+        <sys_updated_on>2016-09-21 21:58:27</sys_updated_on>
+        <value>var userid = current.variables.user.x_dmr_okta_group_m_okta_user_id;&#13;
+var groupid = current.variables.okta_group.okta_id;&#13;
+var groupname = current.variables.okta_group.okta_group_name;&#13;
+gs.info("User equals: "+ userid);&#13;
+gs.info("Group is: "+ groupid);&#13;
+gs.info("Group is: "+ groupname);&#13;
+&#13;
+var okta_url = gs.getProperty("x_dmr_okta_group_m.OktaInstance");&#13;
+var okta_api = gs.getProperty("x_dmr_okta_group_m.OktaAPIKey");&#13;
+&#13;
+gs.info("url is: "+ okta_url);&#13;
+gs.info("api key is: "+ okta_api);&#13;
+&#13;
+&#13;
+var getrestMessage = new sn_ws.RESTMessageV2();&#13;
+var url = okta_url + "/api/v1/groups/"+groupid+"/users/"+userid ;&#13;
+gs.info("url call is: "+ url);&#13;
+getrestMessage.setHttpMethod("delete");&#13;
+getrestMessage.setRequestHeader("Accept","application/json");&#13;
+getrestMessage.setRequestHeader("Content-Type","application/json");&#13;
+getrestMessage.setRequestHeader("Authorization",okta_api);&#13;
+getrestMessage.setEndpoint(url);&#13;
+//getrestMessage.setHttpTimeout(10000);&#13;
+var responseBody = getrestMessage.execute();&#13;
+responseBody.waitForResponse(60);&#13;
+//gs.info(responseBody);&#13;
+&#13;
+//remove user from group.&#13;
+//Get user sys_id&#13;
+&#13;
+var rec = new GlideRecord('sys_user');&#13;
+rec.addQuery('x_dmr_okta_group_m_okta_user_id', userid);&#13;
+rec.query();&#13;
+while(rec.next()){&#13;
+	var o_user = rec.sys_id;&#13;
+	gs.info("user is: " + o_user);&#13;
+}&#13;
+var rec2 = new GlideRecord('x_dmr_okta_group_m_okta_group_management_table');&#13;
+rec2.addQuery('okta_group_name', groupname);&#13;
+rec2.query();&#13;
+while(rec2.next()){&#13;
+	var group_sysid = rec2.sys_id;&#13;
+	gs.info("Sys ID is: " + group_sysid);&#13;
+}&#13;
+&#13;
+var gr = new GlideRecord('x_dmr_okta_group_m_okta_user_group_members');&#13;
+gr.addQuery('okta_group',group_sysid);&#13;
+gr.addQuery('user',o_user);&#13;
+gr.query();&#13;
+while (gr.next()) {&#13;
+	//Delete each record in the query result set&#13;
+	gs.info("deleting record of sys_id = " + gr.sys_id);&#13;
+	gr.deleteRecord();&#13;
+}&#13;
+&#13;
+&#13;
+&#13;
+&#13;
+</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Rest call to remove user">a6883bbc13026e00e0e253c32244b095</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-09-21 21:58:27</sys_created_on>
+        <sys_id>ea883bbc13026e00e0e253c32244b095</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>doug.bagley</sys_updated_by>
+        <sys_updated_on>2016-09-21 21:58:27</sys_updated_on>
+    </wf_condition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">22883bbc13026e00e0e253c32244b096</condition>
+        <from display_value="Begin">ae883bbc13026e00e0e253c32244b095</from>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-09-21 21:58:27</sys_created_on>
+        <sys_id>6a883bbc13026e00e0e253c32244b096</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>doug.bagley</sys_updated_by>
+        <sys_updated_on>2016-09-21 21:58:27</sys_updated_on>
+        <to display_value="Rest call to remove user">a6883bbc13026e00e0e253c32244b095</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">ea883bbc13026e00e0e253c32244b095</condition>
+        <from display_value="Rest call to remove user">a6883bbc13026e00e0e253c32244b095</from>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-09-21 21:58:27</sys_created_on>
+        <sys_id>e6883bbc13026e00e0e253c32244b096</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>doug.bagley</sys_updated_by>
+        <sys_updated_on>2016-09-21 21:58:27</sys_updated_on>
+        <to display_value="End">e2883bbc13026e00e0e253c32244b095</to>
+    </wf_transition>
+    <wf_estimated_runtime_config action="INSERT_OR_UPDATE">
+        <estimated_run_time/>
+        <no_of_data_points>1</no_of_data_points>
+        <percentage_threshold_ert>20</percentage_threshold_ert>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-09-21 21:58:27</sys_created_on>
+        <sys_id>ea883bbc13026e00e0e253c32244b094</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>doug.bagley</sys_updated_by>
+        <sys_updated_on>2016-09-21 21:58:27</sys_updated_on>
+        <workflow_version display_value="Okta remove user from group">aa883bbc13026e00e0e253c32244b094</workflow_version>
+    </wf_estimated_runtime_config>
+    <wf_workflow_version action="update_multiple" query="workflow=c1588158134a2e0045795aff3244b0bb^sys_id!=aa883bbc13026e00e0e253c32244b094">
+        <published>false</published>
+    </wf_workflow_version>
+</record_update>

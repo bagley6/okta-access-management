@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="user" label="User" language="en" table="x_dmr_okta_group_m_okta_user_group_members">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>user</element>
+            <help/>
+            <hint/>
+            <label>User</label>
+            <language>en</language>
+            <name>x_dmr_okta_group_m_okta_user_group_members</name>
+            <plural>Users</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>doug.bagley</sys_created_by>
+            <sys_created_on>2016-09-19 19:16:50</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>f3504194134a2e0045795aff3244b0df</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>User</sys_name>
+            <sys_package display_value="Okta Group Management" source="x_dmr_okta_group_m">17cfc9cb13f1ea0045795aff3244b045</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Okta Group Management">17cfc9cb13f1ea0045795aff3244b045</sys_scope>
+            <sys_update_name>sys_documentation_x_dmr_okta_group_m_okta_user_group_members_user_en</sys_update_name>
+            <sys_updated_by>doug.bagley</sys_updated_by>
+            <sys_updated_on>2016-09-19 19:16:50</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

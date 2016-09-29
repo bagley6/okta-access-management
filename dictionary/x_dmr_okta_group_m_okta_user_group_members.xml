@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Okta User Group Members" max_length="40" name="x_dmr_okta_group_m_okta_user_group_members" type="collection">
+        <element label="Okta Group" max_length="32" name="okta_group" reference="x_dmr_okta_group_m_okta_group_management_table" type="reference"/>
+        <element label="User" max_length="32" name="user" reference="sys_user" reference_qual="x_dmr_okta_group_m_okta_user_idISNOTEMPTY^EQ" reference_qual_condition="x_dmr_okta_group_m_okta_user_idISNOTEMPTY^EQ" type="reference"/>
+        <index name="index">
+            <element name="okta_group"/>
+        </index>
+        <index name="index2">
+            <element name="user"/>
+        </index>
+    </element>
+</database>

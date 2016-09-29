@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="INSERT_OR_UPDATE">
+        <sc_cat_item display_value="Okta Privileged Access">9ef8aa6013026e0045795aff3244b0df</sc_cat_item>
+        <sc_category display_value="Okta Access Management">32b7a66013026e0045795aff3244b042</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-09-20 21:33:41</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>da49ee6013026e0045795aff3244b08a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Okta Access Management.Okta Privileged Access</sys_name>
+        <sys_package display_value="Okta Group Management" source="x_dmr_okta_group_m">17cfc9cb13f1ea0045795aff3244b045</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Okta Group Management">17cfc9cb13f1ea0045795aff3244b045</sys_scope>
+        <sys_update_name>sc_cat_item_category_da49ee6013026e0045795aff3244b08a</sys_update_name>
+        <sys_updated_by>doug.bagley</sys_updated_by>
+        <sys_updated_on>2016-09-20 21:33:41</sys_updated_on>
+    </sc_cat_item_category>
+</record_update>

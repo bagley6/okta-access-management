@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="wf_workflow_version">
+    <wf_workflow_version action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <activity_stages>{"ends":["4129fbbc13026e00e0e253c32244b0e8"],"subflows":[],"stages":{"33293fbc13026e00e0e253c32244b053":{"stageId":"33293fbc13026e00e0e253c32244b053","order":1100,"duration":"","name":"Completed","value":"complete"},"45393fbc13026e00e0e253c32244b000":{"stageId":"45393fbc13026e00e0e253c32244b000","order":100,"duration":"","name":"In Progress","value":"in progress"}},"activities":{"0529fbbc13026e00e0e253c32244b0e8":"45393fbc13026e00e0e253c32244b000","4129fbbc13026e00e0e253c32244b0e8":"33293fbc13026e00e0e253c32244b053"}}</activity_stages>
+        <after_business_rules>false</after_business_rules>
+        <checked_out/>
+        <checked_out_by/>
+        <column_renderer display_value="Workflow-driven">a56213111b030100adca1e094f0713ac</column_renderer>
+        <condition/>
+        <condition_type>run_match</condition_type>
+        <description/>
+        <expected_sequences>0d29fbbc13026e00e0e253c32244b0e8,0529fbbc13026e00e0e253c32244b0e8,4129fbbc13026e00e0e253c32244b0e8</expected_sequences>
+        <expected_time>1970-01-01 14:00:00</expected_time>
+        <expected_time_type/>
+        <full_sequences>0d29fbbc13026e00e0e253c32244b0e8,0529fbbc13026e00e0e253c32244b0e8,4129fbbc13026e00e0e253c32244b0e8</full_sequences>
+        <journal/>
+        <max_activity_count>100</max_activity_count>
+        <name>Okta assign user to group</name>
+        <not_cacheable>false</not_cacheable>
+        <on_cancel><![CDATA[// This script executes if the workflow is cancelled.// The global variable context_sys_id contains the sys_id of the cancelled workflow context.]]></on_cancel>
+        <order>100</order>
+        <pin_type>set_by_activity</pin_type>
+        <published>true</published>
+        <relative_duration/>
+        <requires_ert>true</requires_ert>
+        <run_multiple>false</run_multiple>
+        <schedule/>
+        <stage_field/>
+        <stage_order>computed</stage_order>
+        <start display_value="Begin">0d29fbbc13026e00e0e253c32244b0e8</start>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-09-21 22:01:04</sys_created_on>
+        <sys_id>0929fbbc13026e00e0e253c32244b0e7</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_updated_by>oadmin@oktapov.com</sys_updated_by>
+        <sys_updated_on>2016-09-21 22:17:17</sys_updated_on>
+        <table>x_dmr_okta_group_m_okta_group_management_table</table>
+        <timezone/>
+        <validated>true</validated>
+        <workflow display_value="Okta assign user to group">a526d18f13f1ea0045795aff3244b027</workflow>
+    </wf_workflow_version>
+    <wf_workflow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <description/>
+        <name>Okta assign user to group</name>
+        <preview/>
+        <sys_class_name>wf_workflow</sys_class_name>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-09-15 23:39:34</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a526d18f13f1ea0045795aff3244b027</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Okta assign user to group</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Okta Group Management" source="x_dmr_okta_group_m">17cfc9cb13f1ea0045795aff3244b045</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Okta Group Management">17cfc9cb13f1ea0045795aff3244b045</sys_scope>
+        <sys_update_name>wf_workflow_a526d18f13f1ea0045795aff3244b027</sys_update_name>
+        <sys_updated_by>doug.bagley</sys_updated_by>
+        <sys_updated_on>2016-09-15 23:39:34</sys_updated_on>
+        <table>x_dmr_okta_group_m_okta_group_management_table</table>
+        <template>false</template>
+        <vars/>
+    </wf_workflow>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Completed</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>1100</order>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-09-21 22:01:16</sys_created_on>
+        <sys_id>33293fbc13026e00e0e253c32244b053</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>doug.bagley</sys_updated_by>
+        <sys_updated_on>2016-09-21 22:01:16</sys_updated_on>
+        <value>complete</value>
+        <workflow_version display_value="Okta assign user to group">0929fbbc13026e00e0e253c32244b0e7</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Delivery</name>
+        <ola>1970-01-03 00:00:00</ola>
+        <order>140</order>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-09-21 22:01:16</sys_created_on>
+        <sys_id>3b293fbc13026e00e0e253c32244b053</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>doug.bagley</sys_updated_by>
+        <sys_updated_on>2016-09-21 22:01:16</sys_updated_on>
+        <value>delivery</value>
+        <workflow_version display_value="Okta assign user to group">0929fbbc13026e00e0e253c32244b0e7</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Fulfillment</name>
+        <ola>1970-01-02 00:00:00</ola>
+        <order>120</order>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-09-21 22:01:16</sys_created_on>
+        <sys_id>b7293fbc13026e00e0e253c32244b053</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>doug.bagley</sys_updated_by>
+        <sys_updated_on>2016-09-21 22:01:16</sys_updated_on>
+        <value>fulfillment</value>
+        <workflow_version display_value="Okta assign user to group">0929fbbc13026e00e0e253c32244b0e7</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>In Progress</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>100</order>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-09-21 22:01:29</sys_created_on>
+        <sys_id>45393fbc13026e00e0e253c32244b000</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>doug.bagley</sys_updated_by>
+        <sys_updated_on>2016-09-21 22:01:29</sys_updated_on>
+        <value>in progress</value>
+        <workflow_version display_value="Okta assign user to group">0929fbbc13026e00e0e253c32244b0e7</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Request Cancelled</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>1000</order>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-09-21 22:01:16</sys_created_on>
+        <sys_id>bf293fbc13026e00e0e253c32244b052</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>doug.bagley</sys_updated_by>
+        <sys_updated_on>2016-09-21 22:01:16</sys_updated_on>
+        <value>Request Cancelled</value>
+        <workflow_version display_value="Okta assign user to group">0929fbbc13026e00e0e253c32244b0e7</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Request Approved</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>90</order>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-09-21 22:01:16</sys_created_on>
+        <sys_id>b3293fbc13026e00e0e253c32244b053</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>doug.bagley</sys_updated_by>
+        <sys_updated_on>2016-09-21 22:01:16</sys_updated_on>
+        <value>request_approved</value>
+        <workflow_version display_value="Okta assign user to group">0929fbbc13026e00e0e253c32244b0e7</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Waiting for Approval</name>
+        <ola>1970-01-02 00:00:00</ola>
+        <order>100</order>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-09-21 22:01:16</sys_created_on>
+        <sys_id>37293fbc13026e00e0e253c32244b053</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>doug.bagley</sys_updated_by>
+        <sys_updated_on>2016-09-21 22:01:16</sys_updated_on>
+        <value>waiting_for_approval</value>
+        <workflow_version display_value="Okta assign user to group">0929fbbc13026e00e0e253c32244b0e7</workflow_version>
+    </wf_stage>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Begin">c7a5e32c0a0a0b3a002377c24ed8ea76</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>1</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>Begin</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-09-21 22:01:04</sys_created_on>
+        <sys_id>0d29fbbc13026e00e0e253c32244b0e8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>doug.bagley</sys_updated_by>
+        <sys_updated_on>2016-09-21 22:01:04</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="Okta assign user to group">0929fbbc13026e00e0e253c32244b0e7</workflow_version>
+        <x>20</x>
+        <y>20</y>
+    </wf_activity>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Begin">0d29fbbc13026e00e0e253c32244b0e8</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-09-21 22:01:04</sys_created_on>
+        <sys_id>8d29fbbc13026e00e0e253c32244b0e8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>doug.bagley</sys_updated_by>
+        <sys_updated_on>2016-09-21 22:01:04</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="End">c7a66f7d0a0a0b3a004544a6d2f14076</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>2</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>End</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage display_value="Completed">33293fbc13026e00e0e253c32244b053</stage>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-09-21 22:01:04</sys_created_on>
+        <sys_id>4129fbbc13026e00e0e253c32244b0e8</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>doug.bagley</sys_updated_by>
+        <sys_updated_on>2016-09-21 22:01:55</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="Okta assign user to group">0929fbbc13026e00e0e253c32244b0e7</workflow_version>
+        <x>400</x>
+        <y>150</y>
+    </wf_activity>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>3</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Rest call to add user</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage display_value="In Progress">45393fbc13026e00e0e253c32244b000</stage>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-09-21 22:01:04</sys_created_on>
+        <sys_id>0529fbbc13026e00e0e253c32244b0e8</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>doug.bagley</sys_updated_by>
+        <sys_updated_on>2016-09-21 22:01:45</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Okta assign user to group">0929fbbc13026e00e0e253c32244b0e7</workflow_version>
+        <x>186</x>
+        <y>71</y>
+    </wf_activity>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>0529fbbc13026e00e0e253c32244b0e8</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-09-21 22:01:04</sys_created_on>
+        <sys_id>8529fbbc13026e00e0e253c32244b0e8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>doug.bagley</sys_updated_by>
+        <sys_updated_on>2016-09-21 22:01:04</sys_updated_on>
+        <value>var userid = current.variables.user.x_dmr_okta_group_m_okta_user_id;&#13;
+var groupid = current.variables.okta_group.okta_id;&#13;
+var groupname = current.variables.okta_group.okta_group_name;&#13;
+gs.info("User equals: "+ userid);&#13;
+gs.info("Group is: "+ groupid);&#13;
+gs.info("Group is: "+ groupname);&#13;
+&#13;
+var okta_url = gs.getProperty("x_dmr_okta_group_m.OktaInstance");&#13;
+var okta_api = gs.getProperty("x_dmr_okta_group_m.OktaAPIKey");&#13;
+&#13;
+gs.info("url is: "+ okta_url);&#13;
+gs.info("api key is: "+ okta_api);&#13;
+&#13;
+&#13;
+var getrestMessage = new sn_ws.RESTMessageV2();&#13;
+var url = okta_url + "/api/v1/groups/"+groupid+"/users/"+userid ;&#13;
+gs.info("url call is: "+ url);&#13;
+getrestMessage.setHttpMethod("put");&#13;
+getrestMessage.setRequestHeader("Accept","application/json");&#13;
+getrestMessage.setRequestHeader("Content-Type","application/json");&#13;
+getrestMessage.setRequestHeader("Authorization",okta_api);&#13;
+getrestMessage.setEndpoint(url);&#13;
+//getrestMessage.setHttpTimeout(10000);&#13;
+var responseBody = getrestMessage.execute();&#13;
+responseBody.waitForResponse(60);&#13;
+//gs.info(responseBody);&#13;
+&#13;
+// add user to group membership&#13;
+var rec = new GlideRecord('sys_user');&#13;
+rec.addQuery('x_dmr_okta_group_m_okta_user_id', userid);&#13;
+rec.query();&#13;
+while(rec.next()){&#13;
+	var o_user = rec.sys_id;&#13;
+	gs.info("user is: " + o_user);&#13;
+}&#13;
+var rec2 = new GlideRecord('x_dmr_okta_group_m_okta_group_management_table');&#13;
+rec2.addQuery('okta_group_name', groupname);&#13;
+rec2.query();&#13;
+while(rec2.next()){&#13;
+	var group_sysid = rec2.sys_id;&#13;
+	gs.info("Sys ID is: " + group_sysid);&#13;
+}&#13;
+&#13;
+var gr = new GlideRecord('x_dmr_okta_group_m_okta_user_group_members');&#13;
+gr.initialize();&#13;
+gr.okta_group = group_sysid;&#13;
+gr.user = o_user;&#13;
+gr.insert();&#13;
+&#13;
+&#13;
+&#13;
+&#13;
+</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Rest call to add user">0529fbbc13026e00e0e253c32244b0e8</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-09-21 22:01:04</sys_created_on>
+        <sys_id>4929fbbc13026e00e0e253c32244b0e8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>doug.bagley</sys_updated_by>
+        <sys_updated_on>2016-09-21 22:01:04</sys_updated_on>
+    </wf_condition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">8d29fbbc13026e00e0e253c32244b0e8</condition>
+        <from display_value="Begin">0d29fbbc13026e00e0e253c32244b0e8</from>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-09-21 22:01:04</sys_created_on>
+        <sys_id>4529fbbc13026e00e0e253c32244b0e9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>doug.bagley</sys_updated_by>
+        <sys_updated_on>2016-09-21 22:01:04</sys_updated_on>
+        <to display_value="Rest call to add user">0529fbbc13026e00e0e253c32244b0e8</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">4929fbbc13026e00e0e253c32244b0e8</condition>
+        <from display_value="Rest call to add user">0529fbbc13026e00e0e253c32244b0e8</from>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-09-21 22:01:05</sys_created_on>
+        <sys_id>c529fbbc13026e00e0e253c32244b0e9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>doug.bagley</sys_updated_by>
+        <sys_updated_on>2016-09-21 22:01:05</sys_updated_on>
+        <to display_value="End">4129fbbc13026e00e0e253c32244b0e8</to>
+    </wf_transition>
+    <wf_estimated_runtime_config action="INSERT_OR_UPDATE">
+        <estimated_run_time/>
+        <no_of_data_points>1</no_of_data_points>
+        <percentage_threshold_ert>20</percentage_threshold_ert>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-09-21 22:01:04</sys_created_on>
+        <sys_id>4929fbbc13026e00e0e253c32244b0e7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>doug.bagley</sys_updated_by>
+        <sys_updated_on>2016-09-21 22:01:04</sys_updated_on>
+        <workflow_version display_value="Okta assign user to group">0929fbbc13026e00e0e253c32244b0e7</workflow_version>
+    </wf_estimated_runtime_config>
+    <wf_workflow_version action="update_multiple" query="workflow=a526d18f13f1ea0045795aff3244b027^sys_id!=0929fbbc13026e00e0e253c32244b0e7">
+        <published>false</published>
+    </wf_workflow_version>
+</record_update>

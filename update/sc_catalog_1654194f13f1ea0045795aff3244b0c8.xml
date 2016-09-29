@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sc_catalog">
+    <sc_catalog action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <background_color>white</background_color>
+        <description/>
+        <desktop_continue_shopping/>
+        <desktop_home_page/>
+        <desktop_image/>
+        <editors/>
+        <manager/>
+        <sys_class_name>sc_catalog</sys_class_name>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-09-15 23:31:52</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>1654194f13f1ea0045795aff3244b0c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Okta</sys_name>
+        <sys_package display_value="Okta Group Management" source="x_dmr_okta_group_m">17cfc9cb13f1ea0045795aff3244b045</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Okta Group Management">17cfc9cb13f1ea0045795aff3244b045</sys_scope>
+        <sys_update_name>sc_catalog_1654194f13f1ea0045795aff3244b0c8</sys_update_name>
+        <sys_updated_by>doug.bagley</sys_updated_by>
+        <sys_updated_on>2016-09-15 23:31:52</sys_updated_on>
+        <title>Okta</title>
+    </sc_catalog>
+    <sys_translated_text action="delete_multiple" query="documentkey=1654194f13f1ea0045795aff3244b0c8"/>
+</record_update>

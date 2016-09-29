@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition/>
+        <conditional>false</conditional>
+        <name>Okta Group Membership</name>
+        <run_as display_value="Doug Bagley">9faeb0d31319e20045795aff3244b097</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period/>
+        <run_start>2016-09-19 19:39:24</run_start>
+        <run_time>1970-01-01 08:00:00</run_time>
+        <run_type>daily</run_type>
+        <script><![CDATA[// get all groups in servicenow
+// then process for each group it's members
+// add member record to x_dmr_okta_group_m_okta_user_group_members
+
+var okta_url = gs.getProperty("x_dmr_okta_group_m.OktaInstance");
+var okta_api = gs.getProperty("x_dmr_okta_group_m.OktaAPIKey");
+
+// gs.info("Starting script for Okta Group Membership update");
+var oktaGroup= new GlideRecord('x_dmr_okta_group_m_okta_group_management_table');
+oktaGroup.query();
+
+while (oktaGroup.next()) {
+	// processing each group - web call to get group members
+	var groupid = oktaGroup.okta_id;
+	var groupname = oktaGroup.sys_id;
+	var existing = 0;
+// 	gs.info("Group ID working on is: "+ groupname);
+	
+	var getrestMessage = new sn_ws.RESTMessageV2();
+	var url = okta_url+"/api/v1/groups/"+groupid+"/users";
+	getrestMessage.setHttpMethod("get");
+	getrestMessage.setRequestHeader("Accept","application/json");
+	getrestMessage.setRequestHeader("Content-Type","application/json");
+	getrestMessage.setRequestHeader("Authorization",okta_api);
+	getrestMessage.setEndpoint(url);
+	getrestMessage.setHttpTimeout(10000);
+	var responseBody = getrestMessage.execute();
+	responseBody.waitForResponse(60);
+	
+	var jsonString = responseBody.getBody();
+	var obj = JSON.parse(jsonString);
+	for (var i = 0; i < obj.length; i++) {
+		//gs.print('ID=' + obj[i].id);
+		var okta_id = obj[i].id;
+// 		gs.info("Okta ID is: "+ okta_id);
+		// get sys_user ID
+		
+		var rec = new GlideRecord('sys_user');
+		rec.addQuery('x_dmr_okta_group_m_okta_user_id', okta_id);
+		rec.query();
+		while(rec.next()){
+			var o_user = rec.sys_id;
+			gs.info("user is: " + o_user);
+		}
+		
+		var ou_group = new GlideRecord('x_dmr_okta_group_m_okta_user_group_members');
+		ou_group.addQuery('user', o_user);
+		ou_group.addQuery('okta_group', groupname );
+		ou_group.query();
+		while(ou_group.next()){
+			
+			existing = 1;
+// 			gs.info("Group: " + groupname + "+ User: "+ okta_id + " already exists");
+		}
+		if(existing == 0){
+			// insert membership record
+			var oi_group = new GlideRecord('x_dmr_okta_group_m_okta_user_group_members');
+			oi_group.initialize();
+			oi_group.okta_group = groupname;
+			oi_group.user = o_user;
+			oi_group.insert();
+// 			gs.info("going to insert record: " + groupname + " plus "+ o_user);
+		}
+	}
+}
+]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-09-19 20:56:38</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>62850518134a2e0045795aff3244b0f7</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>Okta Group Membership</sys_name>
+        <sys_package display_value="Okta Group Management" source="x_dmr_okta_group_m">17cfc9cb13f1ea0045795aff3244b045</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Okta Group Management">17cfc9cb13f1ea0045795aff3244b045</sys_scope>
+        <sys_update_name>sysauto_script_62850518134a2e0045795aff3244b0f7</sys_update_name>
+        <sys_updated_by>doug.bagley</sys_updated_by>
+        <sys_updated_on>2016-09-20 16:25:10</sys_updated_on>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_view">
+    <sys_ui_view action="INSERT_OR_UPDATE">
+        <group/>
+        <hidden>false</hidden>
+        <name>sys_popup,auto_order_stages</name>
+        <roles/>
+        <sys_class_name>sys_ui_view</sys_class_name>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-09-21 22:00:45</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>1419fbbc13026e00e0e253c32244b06a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Sys_popup,auto_order_stages</sys_name>
+        <sys_package display_value="Okta Group Management" source="x_dmr_okta_group_m">17cfc9cb13f1ea0045795aff3244b045</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Okta Group Management">17cfc9cb13f1ea0045795aff3244b045</sys_scope>
+        <sys_update_name>sys_ui_view_1419fbbc13026e00e0e253c32244b06a</sys_update_name>
+        <sys_updated_by>doug.bagley</sys_updated_by>
+        <sys_updated_on>2016-09-21 22:00:45</sys_updated_on>
+        <title>Sys_popup,auto_order_stages</title>
+        <user/>
+    </sys_ui_view>
+</record_update>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="ua_table_licensing_config">
+    <ua_table_licensing_config action="INSERT_OR_UPDATE">
+        <is_fulfillment>false</is_fulfillment>
+        <name>x_dmr_okta_group_m_okta_group_management_table</name>
+        <owner_condition table="x_dmr_okta_group_m_okta_group_management_table">sys_created_by=javascript:gs.getUserName()^EQ<item endquery="false" field="sys_created_by" goto="false" newquery="false" operator="=" or="false" value="javascript:gs.getUserName()"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </owner_condition>
+        <sys_class_name>ua_table_licensing_config</sys_class_name>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-09-15 23:11:54</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>d8dfc9cb13f1ea0045795aff3244b0d4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_dmr_okta_group_m_okta_group_management_table</sys_name>
+        <sys_package display_value="Okta Group Management" source="x_dmr_okta_group_m">17cfc9cb13f1ea0045795aff3244b045</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Okta Group Management">17cfc9cb13f1ea0045795aff3244b045</sys_scope>
+        <sys_update_name>ua_table_licensing_config_d8dfc9cb13f1ea0045795aff3244b0d4</sys_update_name>
+        <sys_updated_by>doug.bagley</sys_updated_by>
+        <sys_updated_on>2016-09-15 23:11:54</sys_updated_on>
+    </ua_table_licensing_config>
+</record_update>

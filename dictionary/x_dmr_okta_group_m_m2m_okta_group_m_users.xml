@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Okta Group M M2m Okta Group M Users" max_length="40" name="x_dmr_okta_group_m_m2m_okta_group_m_users" type="collection">
+        <element label="Okta Group Management" max_length="32" name="okta_group_management" reference="x_dmr_okta_group_m_okta_group_management_table" type="reference"/>
+        <element label="User" max_length="32" name="user" reference="sys_user" type="reference"/>
+        <index name="index">
+            <element name="okta_group_management"/>
+        </index>
+        <index name="index2">
+            <element name="user"/>
+        </index>
+    </element>
+</database>

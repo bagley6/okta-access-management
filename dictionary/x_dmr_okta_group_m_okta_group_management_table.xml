@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Okta Groups" max_length="40" name="x_dmr_okta_group_m_okta_group_management_table" type="collection">
+        <element label="Okta Created" max_length="40" name="okta_created" type="glide_date_time"/>
+        <element label="Okta Group Description" max_length="200" name="okta_group_description" type="string"/>
+        <element display="true" label="Okta Group Name" max_length="255" name="okta_group_name" type="string_full_utf8"/>
+        <element label="Okta Group Type" max_length="255" name="okta_group_type" type="string_full_utf8"/>
+        <element label="Okta ID" max_length="255" name="okta_id" type="string_full_utf8"/>
+        <element label="Owner" max_length="32" name="owner" reference="sys_user" type="reference"/>
+        <index name="index">
+            <element name="owner"/>
+        </index>
+        <index name="index2">
+            <element name="okta_id"/>
+        </index>
+    </element>
+</database>

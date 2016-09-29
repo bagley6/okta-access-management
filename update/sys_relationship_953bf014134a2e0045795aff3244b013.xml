@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_relationship">
+    <sys_relationship action="INSERT_OR_UPDATE">
+        <advanced>false</advanced>
+        <apply_to/>
+        <basic_apply_to>x_dmr_okta_group_m_okta_group_management_table</basic_apply_to>
+        <basic_query_from>sys_user</basic_query_from>
+        <insert_callback/>
+        <name>Okta Group Members</name>
+        <query_from/>
+        <query_with><![CDATA[(function refineQuery(current, parent) {
+
+	// Add your code here, such as current.addQuery(field, value);
+	current.addQuery(' x_dmr_okta_group_m_m2m_okta_group_m_users', parent.sys_id );
+
+})(current, parent);]]></query_with>
+        <reference_field>manager</reference_field>
+        <related_list/>
+        <simple_reference>false</simple_reference>
+        <sys_class_name>sys_relationship</sys_class_name>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-09-19 19:02:00</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>953bf014134a2e0045795aff3244b013</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Okta Group Members</sys_name>
+        <sys_package display_value="Okta Group Management" source="x_dmr_okta_group_m">17cfc9cb13f1ea0045795aff3244b045</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Okta Group Management">17cfc9cb13f1ea0045795aff3244b045</sys_scope>
+        <sys_update_name>sys_relationship_953bf014134a2e0045795aff3244b013</sys_update_name>
+        <sys_updated_by>doug.bagley</sys_updated_by>
+        <sys_updated_on>2016-09-19 19:30:45</sys_updated_on>
+    </sys_relationship>
+    <sys_translated_text action="delete_multiple" query="documentkey=953bf014134a2e0045795aff3244b013"/>
+</record_update>
